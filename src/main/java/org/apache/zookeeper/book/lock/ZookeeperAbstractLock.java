@@ -3,7 +3,7 @@ package org.apache.zookeeper.book.lock;
 import org.I0Itec.zkclient.ZkClient;
 
 public  abstract class ZookeeperAbstractLock implements ExtLock {
-    private static final String CONNECTION="192.168.91.5:2181";
+    private static final String CONNECTION="127.0.0.1:2181";
     protected ZkClient zkClient = new ZkClient(CONNECTION);
     protected String lockPath="/lockPath";
 
